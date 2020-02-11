@@ -1,0 +1,18 @@
+{
+  "version": "0.0.0",
+  "packages": [
+    "packages/projects/*",
+    "packages/components/@common/*",
+    "packages/components/@desktop/*",
+    "packages/components/@mobile/*",
+    "packages/components/@utils/*"
+  ],
+  "command": {
+    "publish": {
+      "conventionalCommits": true
+    },
+    "version": {
+      "message": "chore(release): publish %v"
+    }
+  }
+}

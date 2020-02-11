@@ -1,0 +1,30 @@
+{
+  "name": "lerna-boilerplate",
+  "version": "0.0.0",
+  "description": "boilerplate for monorepo lerna",
+  "main": "index.js",
+  "scripts": {
+    "version-bump": "lerna version --conventional-commits --tag-version-prefix='' --changelog-preset eslint"
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "node ./git_hooks/prepareCommitMsg.js"
+    }
+  },
+  "devDependencies": {
+    "colors": "^1.4.0",
+    "conventional-changelog-eslint": "^3.0.4",
+    "husky": "^4.2.1",
+    "lerna": "^3.20.2"
+  },
+  "author": "Vladimir Vysokiy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vvysokiy/lerna-boilerplate/issues"
+  },
+  "homepage": "https://github.com/vvysokiy/lerna-boilerplate#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vvysokiy/lerna-boilerplate.git"
+  }
+}
